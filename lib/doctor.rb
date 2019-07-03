@@ -1,6 +1,6 @@
 require "pry"
 
-class Doctor 
+class Doctor
 
   attr_reader :name
 

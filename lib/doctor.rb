@@ -1,6 +1,6 @@
 require "pry"
 
-class Doctor
+class Doctor 
 
   attr_reader :name
 
@@ -16,7 +16,7 @@ class Doctor
   end
 
   def appointments
-    Appointments.all.map do |appointment|
+    Appointment.all.map do |appointment|
       if appointment.doctor = self
         appointment
       end

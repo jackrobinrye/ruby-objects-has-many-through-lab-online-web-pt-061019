@@ -22,8 +22,8 @@ class Patient
   def appointments
     Appointment.all.map do |appointment|
       if appointment.patient == self
-        appointment 
-      end 
+        appointment
+      end
     end
   end
 

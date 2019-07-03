@@ -15,6 +15,10 @@ class Doctor
     @@all
   end
 
+  def new_appointment(date, patient)
+    appointment = Appointment.new(date, patient, self)
+  end
+
   def appointments
     Appointment.all.map do |appointment|
       if appointment.doctor = self
@@ -23,8 +27,10 @@ class Doctor
     end
   end
 
-  def new_appointment(date, patient)
-    appointment = Appointment.new(date, patient, self)
-  end
+  def patients 
+    appointments.map do |appointment|
+      appointment.patient 
+    end 
+  end 
 
 end

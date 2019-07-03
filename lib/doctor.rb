@@ -24,7 +24,7 @@ class Doctor
       if appointment.doctor = self
         appointment
       end
-    end
+    end.compact
   end
 
   def patients

@@ -21,8 +21,8 @@ class Patient
 
   def appointments
     Appointment.all.map do |appointment|
-      appointment.patient = self 
-    end 
-  end 
+      appointment.patient = self
+    end
+  end
 
 end
